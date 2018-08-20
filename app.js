@@ -19,5 +19,5 @@ app.get("/", (req, res) => {
 
 // 
 app.listen(port, (req, res) => {
-  console.log(`Server started on port ${chalk.green(port)}...`);
+  debug(`Server started on port ${chalk.green(port)}...`);
 });
