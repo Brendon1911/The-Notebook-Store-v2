@@ -1,0 +1,22 @@
+{
+  "name": "the-notebook-store",
+  "version": "2.0.0",
+  "description": "A simple Express ecommerce web application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brendon1911/The-Notebook-Store-v2.git"
+  },
+  "author": "Brendon Richards",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brendon1911/The-Notebook-Store-v2/issues"
+  },
+  "homepage": "https://github.com/Brendon1911/The-Notebook-Store-v2#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
