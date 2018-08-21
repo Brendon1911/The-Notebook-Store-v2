@@ -12,6 +12,15 @@ const app = express();
 // Use Morgan
 app.use(morgan("tiny"));
 
+// Use public files
+app.use(express.static(path.join(__dirname, "/public")));
+
+// Use Semantic UI CSS
+app.use("/css", express.static(path.join(__dirname, "/semantic/dist/")));
+
+// Use Semantic UI JS
+app.use("/js", express.static(path.join(__dirname, "/semantic/dist/")));
+
 // Index route
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "views/index.html"));
