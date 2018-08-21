@@ -5,7 +5,7 @@ const express = require('express');
 const chalk = require('chalk');
 
 
-const debug = require('debug');
+const debug = require('debug')('app');
 
 
 const morgan = require('morgan');
@@ -14,7 +14,7 @@ const morgan = require('morgan');
 const path = require('path');
 
 
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 // Initialize app
 const app = express();
