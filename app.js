@@ -34,9 +34,17 @@ app.use('/js', express.static(path.join(__dirname, '/semantic/dist/')));
 // Use jQuery
 app.use('/js', express.static(path.join(__dirname, '/node_modules/jquery/dist/')));
 
+// Set views directory
+app.set('views', './src/views');
+
+// Set view engine
+app.set('view engine', 'ejs');
+
 // Index route
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'views/index.html'));
+  res.render('index', {
+    title: 'The Notebook Store'
+  });
 });
 
 //
