@@ -21,6 +21,9 @@ app.use("/css", express.static(path.join(__dirname, "/semantic/dist/")));
 // Use Semantic UI JS
 app.use("/js", express.static(path.join(__dirname, "/semantic/dist/")));
 
+// Use jQuery
+app.use("/js", express.static(path.join(__dirname, "/node_modules/jquery/dist/")));
+
 // Index route
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "views/index.html"));
