@@ -25,6 +25,9 @@ app.use(morgan('tiny'));
 // Use public files
 app.use(express.static(path.join(__dirname, '/public')));
 
+// Use custom JavaScript
+app.use(express.static(path.join(__dirname, '/public/js')));
+
 // Use Semantic UI CSS
 app.use('/css', express.static(path.join(__dirname, '/semantic/dist/')));
 
